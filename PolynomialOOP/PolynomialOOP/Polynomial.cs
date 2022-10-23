@@ -55,8 +55,33 @@ namespace PolynomialOOP
         }
         public static Polynomial operator *(Polynomial a, Polynomial b)
         {
-            int[] l = new int[] {1,3 };
-            return new Polynomial(l);
+            int[] pA = a.getCoefficients();
+            int[] pB = b.getCoefficients();
+
+            int aLength = a.getCoefficientsSize();
+            int bLength = b.getCoefficientsSize();
+
+
+            int[] prod = new int[aLength + bLength - 1];
+
+            // Initialize the product polynomial
+            for (int i = 0; i < aLength + bLength - 1; i++)
+            {
+                prod[i] = 0;
+            }
+
+            // Multiply two polynomials term by term
+            // Take ever term of first polynomial
+            for (int i = 0; i < aLength; i++)
+            {
+                // Multiply the current term of first polynomial
+                // with every term of second polynomial.
+                for (int j = 0; j < bLength; j++)
+                {
+                    prod[i + j] += pA[i] * pB[j];
+                }
+            }
+            return new Polynomial(prod);
         }
 
         public int[] getCoefficients()
