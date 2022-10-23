@@ -1,0 +1,15 @@
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX5\PolynomialOOP\PolynomialOOP\PolynomialOOP\bin\Debug\net6.0\PolynomialOOP.exe
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX5\PolynomialOOP\PolynomialOOP\PolynomialOOP\bin\Debug\net6.0\PolynomialOOP.deps.json
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX5\PolynomialOOP\PolynomialOOP\PolynomialOOP\bin\Debug\net6.0\PolynomialOOP.runtimeconfig.json
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX5\PolynomialOOP\PolynomialOOP\PolynomialOOP\bin\Debug\net6.0\PolynomialOOP.dll
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX5\PolynomialOOP\PolynomialOOP\PolynomialOOP\bin\Debug\net6.0\PolynomialOOP.pdb
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX5\PolynomialOOP\PolynomialOOP\PolynomialOOP\obj\Debug\net6.0\PolynomialOOP.csproj.AssemblyReference.cache
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX5\PolynomialOOP\PolynomialOOP\PolynomialOOP\obj\Debug\net6.0\PolynomialOOP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX5\PolynomialOOP\PolynomialOOP\PolynomialOOP\obj\Debug\net6.0\PolynomialOOP.AssemblyInfoInputs.cache
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX5\PolynomialOOP\PolynomialOOP\PolynomialOOP\obj\Debug\net6.0\PolynomialOOP.AssemblyInfo.cs
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX5\PolynomialOOP\PolynomialOOP\PolynomialOOP\obj\Debug\net6.0\PolynomialOOP.csproj.CoreCompileInputs.cache
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX5\PolynomialOOP\PolynomialOOP\PolynomialOOP\obj\Debug\net6.0\PolynomialOOP.dll
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX5\PolynomialOOP\PolynomialOOP\PolynomialOOP\obj\Debug\net6.0\refint\PolynomialOOP.dll
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX5\PolynomialOOP\PolynomialOOP\PolynomialOOP\obj\Debug\net6.0\PolynomialOOP.pdb
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX5\PolynomialOOP\PolynomialOOP\PolynomialOOP\obj\Debug\net6.0\PolynomialOOP.genruntimeconfig.cache
+C:\Users\marce\OneDrive\Documents\QABootcamp\Task4\EX5\PolynomialOOP\PolynomialOOP\PolynomialOOP\obj\Debug\net6.0\ref\PolynomialOOP.dll

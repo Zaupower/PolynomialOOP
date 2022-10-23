@@ -13,7 +13,7 @@ namespace PolynomialOOP
     public class Polynomial
     {
         private int[] coefficients;
-        Polynomial(int[] coefficients)
+        public Polynomial(int[] coefficients)
         {
             this.coefficients = new int[coefficients.Length];
             this.coefficients = coefficients;
@@ -50,12 +50,12 @@ namespace PolynomialOOP
 
         public static Polynomial operator -(Polynomial a, Polynomial b)
         {
-            string[] l = new string[] { "a", "b" };
+            int[] l = new int[] { 2,4 };
             return new Polynomial(l);
         }
         public static Polynomial operator *(Polynomial a, Polynomial b)
         {
-            string[] l = new string[] { "a", "b" };
+            int[] l = new int[] {1,3 };
             return new Polynomial(l);
         }
 
@@ -69,9 +69,27 @@ namespace PolynomialOOP
             return this.coefficients.Length;
         }
 
+
+        //Missing not showing power or coefficiant of 0
         public override string ToString()
         {
-            return "Person: ";
+            StringBuilder s = new StringBuilder();
+            int length = this.coefficients.Length;
+            for (int i = 0; i < length; i++)
+            {
+                s.Append(this.coefficients[i].ToString());
+                
+                if (i != 0)
+                {
+                    s.Append("x^" + i);
+                }
+                if (i != length - 1)
+                {
+                    s.Append(" + ");
+                }
+            }
+
+            return s.ToString();
         }
     }
 }
