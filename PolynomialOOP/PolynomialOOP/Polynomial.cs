@@ -77,16 +77,27 @@ namespace PolynomialOOP
             int length = this.coefficients.Length;
             for (int i = 0; i < length; i++)
             {
-                s.Append(this.coefficients[i].ToString());
+                if(System.Math.Abs(this.coefficients[i]) > 0)
+                {
+                    s.Append(System.Math.Abs(this.coefficients[i]).ToString());
+
+                    if (i != 0)
+                    {
+                        s.Append("x^" + i);
+                    }
+                    if (i != length - 1)
+                    {
+                        if (this.coefficients[i + 1] > 0)
+                        {
+                            s.Append(" + ");
+                        }
+                        else
+                        {
+                            s.Append(" - ");
+                        }
+                    }
+                }
                 
-                if (i != 0)
-                {
-                    s.Append("x^" + i);
-                }
-                if (i != length - 1)
-                {
-                    s.Append(" + ");
-                }
             }
 
             return s.ToString();
