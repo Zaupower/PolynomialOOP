@@ -12,17 +12,39 @@ namespace PolynomialOOP
 {
     public class Polynomial
     {
-        string[] coefficients;
-        Polynomial(string[] coefficients)
+        private int[] coefficients;
+        Polynomial(int[] coefficients)
         {
-            this.coefficients = new string[coefficients.Length];
+            this.coefficients = new int[coefficients.Length];
             this.coefficients = coefficients;
         }
 
         public static Polynomial operator +(Polynomial a,Polynomial b)
         {
-            string[] l = new string[] {"a", "b"};
-            return new Polynomial(l);
+            int size = max(a.getCoefficientsSize(), b.getCoefficientsSize());
+
+            int[] pA = a.getCoefficients();
+            int[] pB = b.getCoefficients();
+
+            int[] sum = new int[size];
+
+            for (int i = 0; i < a.getCoefficientsSize(); i++)
+            {
+                sum[i] = pA[i];
+            }
+
+            // Take ever term of first polynomial
+            for (int i = 0; i < b.getCoefficientsSize(); i++)
+            {
+                sum[i] += pB[i];
+            }
+
+            return new Polynomial(sum);
+        }
+
+        private static int max(int m, int n)
+        {
+            return (m > n) ? m : n;
         }
 
 
@@ -37,6 +59,15 @@ namespace PolynomialOOP
             return new Polynomial(l);
         }
 
+        public int[] getCoefficients()
+        {
+            return this.coefficients;
+        }
+
+        public int getCoefficientsSize()
+        {
+            return this.coefficients.Length;
+        }
 
         public override string ToString()
         {
