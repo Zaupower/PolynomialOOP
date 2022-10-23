@@ -12,10 +12,18 @@ class Program
         Polynomial pp2 = new Polynomial(polis2);
         Console.WriteLine(pp2.ToString());
 
+        /*
         Polynomial ppResult = pp + pp2;  
         Console.WriteLine(ppResult.ToString());
 
         Polynomial ppResultMulti = pp * pp2;
         Console.WriteLine(ppResultMulti.ToString());
+         * 
+         * 
+         */
+
+
+        Polynomial ppResultSub = pp - pp2;
+        Console.WriteLine(ppResultSub.ToString());
     }
 }

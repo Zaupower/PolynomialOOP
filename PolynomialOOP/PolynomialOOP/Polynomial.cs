@@ -50,8 +50,31 @@ namespace PolynomialOOP
 
         public static Polynomial operator -(Polynomial a, Polynomial b)
         {
-            int[] l = new int[] { 2,4 };
-            return new Polynomial(l);
+            int size = max(a.getCoefficientsSize(), b.getCoefficientsSize());
+
+            int[] pA = a.getCoefficients();
+            int[] pB = b.getCoefficients();
+
+            //Invert pB values to make subtration
+            for(int i = 0; i < pB.Length; i++)
+            {
+                pB[i] = -pB[i];
+            }
+
+            int[] sub = new int[size];
+
+            for (int i = 0; i < a.getCoefficientsSize(); i++)
+            {
+                sub[i] = pA[i];
+            }
+
+            // Take ever term of first polynomial
+            for (int i = 0; i < b.getCoefficientsSize(); i++)
+            {
+                sub[i] += pB[i];
+            }
+
+            return new Polynomial(sub);
         }
         public static Polynomial operator *(Polynomial a, Polynomial b)
         {
@@ -104,6 +127,11 @@ namespace PolynomialOOP
             {
                 if(System.Math.Abs(this.coefficients[i]) > 0)
                 {
+                    if (this.coefficients[i] < 0 && s.ToString() == "")
+                    {
+                        Console.WriteLine("first loop if i=" + i);
+                        s.Append(" - ");
+                    }
                     s.Append(System.Math.Abs(this.coefficients[i]).ToString());
 
                     if (i != 0)
