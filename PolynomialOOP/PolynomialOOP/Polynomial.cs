@@ -129,7 +129,6 @@ namespace PolynomialOOP
                 {
                     if (this.coefficients[i] < 0 && s.ToString() == "")
                     {
-                        Console.WriteLine("first loop if i=" + i);
                         s.Append(" - ");
                     }
                     s.Append(System.Math.Abs(this.coefficients[i]).ToString());
