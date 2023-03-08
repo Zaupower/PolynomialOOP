@@ -5,9 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-
-//https://www.geeksforgeeks.org/program-add-two-polynomials/
-//https://www.geeksforgeeks.org/multiply-two-polynomials-2/
 namespace PolynomialOOP
 {
     public class Polynomial
